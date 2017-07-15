@@ -1,0 +1,29 @@
+<h1>
+  {{title}}
+</h1>
+
+<p>Remove the following code to get back to total vanilla-ness (except for bootstrap of course)!</p>
+<div class="bs-example" data-example-id="split-button-dropdown">
+  <button (click)=getAPI()>Get API</button>
+</div>
+
+<hr/>
+
+<div>
+  <table  class="table table-bordered table-striped p-a-1">
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>person</th>
+        <th>phone</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let person of vResults">
+        <td>{{person.Id}}</td>
+        <td>{{person.person1}}</td>
+        <td>{{person.phone}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
